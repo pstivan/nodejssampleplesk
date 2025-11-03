@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Plesk Passenger Task App</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 900px; margin: auto; }
+    input, button, textarea { padding: 8px; margin: 6px 0; width: 100%; box-sizing: border-box; }
+    .task { border: 1px solid #ddd; padding:10px; margin:8px 0; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <h1>Task Manager (Passenger-ready)</h1>
+  <div id="auth">
+    <h2>Register / Login</h2>
+    <input id="username" placeholder="username" />
+    <input id="password" placeholder="password" type="password" />
+    <button id="register">Register</button>
+    <button id="login">Login</button>
+    <div id="me"></div>
+  </div>
+  <hr/>
+  <div id="create" style="display:none;">
+    <h2>Create Task</h2>
+    <input id="title" placeholder="title" />
+    <textarea id="desc" placeholder="description"></textarea>
+    <input type="file" id="file" />
+    <button id="createBtn">Create Task</button>
+  </div>
+  <h2>Your Tasks</h2>
+  <div id="tasks"></div>
+  <script src="/app-client.js"></script>
+</body>
+</html>
